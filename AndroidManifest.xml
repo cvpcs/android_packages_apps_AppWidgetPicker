@@ -23,17 +23,15 @@
     
     <application android:icon="@drawable/icon" android:label="@string/app_name">
         <activity android:name="AppWidgetPickerActivity" 
-		          android:label="AppWidgetPicker" 
-		          android:theme="@android:style/Theme.Dialog"
-		          >
-   			<intent-filter android:priority="999" >
+                  android:label="AppWidgetPicker" 
+                  android:theme="@android:style/Theme.Dialog">
+            <intent-filter android:priority="999" >
                 <action android:name="android.appwidget.action.APPWIDGET_PICK" />
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
-		          
-		</activity>
-
+	</activity>
     </application>
+
     <uses-sdk android:minSdkVersion="7" />
 
 </manifest> 
